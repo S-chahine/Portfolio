@@ -1,0 +1,492 @@
+<!DOCTYPE HTML5>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/JgcQTL2+n3DK7tpq0CJ6pL+ia6" crossorigin="anonymous">
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+			/* Added a background color */
+		}
+
+		#banner {
+			color: white;
+			text-align: center;
+			padding: 50px 20px;
+			background-color: #646464;
+			/* Updated background color */
+
+		}
+
+		#container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			max-width: 90%;
+			margin: auto;
+			/*background-color: aquamarine;*/
+
+
+		}
+
+		#profileImage {
+			border-radius: 50%;
+			margin-right: 20px;
+			border: 10px solid #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.profileImage {
+			margin-top: 7%;
+			margin-bottom: 5%;
+		}
+
+		#navLinksAndContent {
+			flex-grow: 1;
+
+		}
+
+		#navLinks {
+			margin-bottom: 20px;
+
+		}
+
+		.nav-link {
+			cursor: pointer;
+			color: gray;
+			font-weight: bold;
+			font-size: 18px;
+			margin-right: 20px;
+			transition: color 0.3s ease;
+			display: inline;
+			padding: 5px;
+		}
+
+		.nav-link:hover {
+			color: #ef8376;
+		}
+
+		#content,
+		.section-content {
+			display: none;
+			padding-left: 30px;
+			padding-top: 0;
+			text-align: justify;
+			background-color: rgba(255, 255, 255, 0.9);
+			flex-grow: 1;
+			box-sizing: border-box;
+
+		}
+
+		#content {
+			display: block;
+		}
+
+		h2 {
+			color: #ef8376;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.6;
+			color: #555;
+		}
+
+		.section-content {
+			display: none;
+		}
+
+		.default {
+			display: block;
+			padding-left: 30px;
+			padding-top: 0;
+			text-align: justify;
+			background-color: rgba(255, 255, 255, 0.9);
+			flex-grow: 1;
+			box-sizing: border-box;
+		}
+
+		.label {
+			color: white;
+			font-size: 50px;
+		}
+
+		h3 {
+			color: rgb(67, 67, 67);
+		}
+
+		h4 {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Inner -->
+			<div class="inner">
+				<header>
+					<h1><a href="index.html" id="logo" style="color: #381c07; font-weight: bold;">Samah Chahine</a></h1>
+					<hr />
+					<p style="color: #381c07; font-weight: bold; font-size: 25px;">Welcome to my Full Stack Web
+						Development Showcase!
+					</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button circled scrolly">Start</a>
+				</footer>
+			</div>
+		</div>
+		<p style="text-align: right; font-size: 10px;">
+			Photo by <a
+				href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus
+				Spiske</a>
+			on <a
+				href="https://unsplash.com/photos/macbook-air-on-top-of-table-fFRG_YEaOuE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+		</p>
+	</div>
+
+	<!-- Banner -->
+	<section id="banner" style="background-image: url(images/binary.jpg); background-size: cover ;">
+		<div id="container">
+			<div class="profileImage">
+				<img id="profileImage" src="images/thumbnail_IMG_2561.jpg" height="180px" width="150px" />
+			</div>
+			<div id="navLinksAndContent" style=" padding: 10px; background-color: #fff;">
+				<div id="navLinks">
+					<div class="nav-link" onclick="showContent('whatIBringToTheTable')">What I Bring to the Table</div>
+					<div class="nav-link" onclick="showContent('beyondCoding')">Beyond Coding</div>
+					<div class="nav-link" onclick="showContent('letsCollaborate')">Let's Collaborate</div>
+				</div>
+
+				<div id="content">
+					<h2>Greetings!</h2>
+					<p> I'm Samah Chahine, a passionate and dedicated Full-Stack Web Developer based in
+						Canada. I have a profound love for turning ideas into reality through code, approaching each
+						project with enthusiasm and a commitment to excellence.
+					</p>
+				</div>
+				<div class="default" id="work">
+					<h3>My Work:</h3>
+					<p></p>
+					<h4>Graduation Project:</h4>
+					<p>Developed a comprehensive online shopping website as part of my academic journey.</p>
+					<h4>Side Projects:</h4>
+					<p>
+					<ul style="color:rgb(91, 91, 91);">
+						<li>Created a Quote Generator app using React, Bootstrap, and FontAwesome.</li>
+						<li>
+							Developed a Pomodoro Timer app with customizable intervals for efficient time management,
+							leveraging frameworks like React.js and Bootstrap, complemented by captivating SVG
+							animations to enhance user engagement.</li>
+					</ul>
+					</p>
+					<h4>Ongoing Journey:</h4>
+					<p>Actively working on new projects to expand my skill set and contribute to innovative solutions.
+					</p>
+					<h4>Skills:</h4>
+					<p>
+						Proficient in a variety of technologies, including HTML, CSS, JavaScript (React, Angular,
+						jQuery), Node.js, Express, Bootstrap, SASS, and more. I thrive on challenges, combining
+						creativity with strategic thinking to deliver solutions that exceed expectations.</p>
+				</div>
+
+				<div class="section-content" id="whatIBringToTheTable">
+					<h2>What I Bring to the Table:</h2>
+					<ul style="color: #ee6758ce;">
+						<li>
+							<h3>Technical Proficiency:</h3>
+							<p>As a Full Stack Web Developer, I possess a robust foundation in both front-end
+								and back-end technologies, ensuring a comprehensive skill set for crafting dynamic and
+								responsive web applications. My toolkit encompasses:</p>
+							<ul>
+								<li>
+									<strong>Front-end Technologies:</strong> HTML, CSS, JavaScript (React, Angular,
+									jQuery)
+								</li>
+								<li>
+									<strong>Back-end Technologies:</strong> Node.js, Express
+								</li>
+								<li>
+									<strong>Additional Front-end Skills:</strong> Bootstrap, SASS
+								</li>
+								<li>
+									<strong>Database Management:</strong> C++, SQL (PostgreSQL, MySQL), NoSQL (MongoDB)
+								</li>
+								<li>
+									<strong>Version Control:</strong> Git, GitHub
+								</li>
+								<li>
+									<strong>Web Development Tools:</strong> VS Code, npm, webpack
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Problem Solver:</h3>
+							<p>I thrive on challenges and see each project as an opportunity to solve real-world
+								problems. My approach involves combining creativity with strategic thinking to
+								deliver solutions that exceed expectations.</p>
+						</li>
+						<li>
+							<h3>Continuous Learner:</h3>
+							<p>In the ever-evolving world of web development, I embrace learning new technologies
+								and staying updated with industry trends. I believe that a curious mindset is key to
+								staying innovative.</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="section-content" id="beyondCoding">
+					<h2>Beyond Coding:</h2>
+					<p>
+						Besides coding, I'm all about diving into new tech stuff, getting lost in good books for inspo,
+						and showing off my painting skills. Beyond just the techy side, I bring a mix of creativity and
+						adaptability to the table, making challenges a playground for innovation.</p>
+				</div>
+
+				<div class="section-content" id="letsCollaborate">
+					<h2>Let's Collaborate:</h2>
+					<p>I'm always excited about the possibility of collaborating on innovative projects. If you're
+						looking for a developer with a blend of technical expertise and a passion for creativity,
+						let's connect and bring ideas to life!</p>
+					<div style="text-align: right;">
+						<ul class="icons" style="background-color: #646464; display:inline-block;">
+							<li>
+								<a href="https://github.com/S-chahine" class="icon brands fa-github" target="_blank">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://linkedin.com/in/
+								samah-chahine-4a4435252
+								" class="icon brands fa-linkedin-in" target="_blank">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section style="background-color: white;">
+		<div style="padding:20px;">
+			<h2>Portfolio Highlights</h2>
+
+		</div>
+	</section>
+
+
+	<!-- Carousel -->
+	<section class="container" style="background-image:url(images/header.jpg); background-repeat: no-repeat;">
+		<div class="row" style="padding: 20px;">
+
+			<div class="col-4 reel">
+
+				<article style="padding:10px; background-color: white; height:100%;">
+					<header>
+						<h2 style="color: #646464; text-align: center;"><a
+								href="http://S-chahine.github.io/quote-machine" target="_blank">Quote Machine</a></h2>
+					</header>
+
+					<a href="http://S-chahine.github.io/quote-machine" class="image featured" target="_blank"
+						style="text-align: center;"><img src="images/quote.jpg" alt="Quote Machine App Screenshot"
+							style="border: 10px solid #646464; border-radius: 10%; width: 200px; height: 200px; display: inline-block;" /></a>
+
+					<p>The Quote Machine App is a web application built with React, Bootstrap, and FontAwesome. It
+						dynamically fetches random quotes from the Quotable API, presenting them in an aesthetically
+						pleasing card layout. The app features a vibrant color scheme that changes with each new quote,
+						enhancing the visual experience. Users can easily generate a new quote, tweet their favorite
+						quotes,
+						and share them on Instagram. The responsive design ensures an optimal viewing experience across
+						various devices.
+					</p>
+
+					<h3>Key Features:</h3>
+
+					<ul>
+						<li>Random quote generation from the Quotable API</li>
+						<li>Dynamic color scheme for a visually engaging experience</li>
+						<li>Tweet quotes directly from the app</li>
+						<li>Share quotes on Instagram with a single click</li>
+					</ul>
+
+					<p>Technologies Used:</p>
+					<ul>
+						<li>React</li>
+						<li>Bootstrap</li>
+						<li>FontAwesome</li>
+						<li>Quotable API</li>
+					</ul>
+
+					<p>Check out the app live <a href="http://S-chahine.github.io/quote-machine" target="_blank"
+							style="color:darkorange">here</a>!
+					</p>
+				</article>
+			</div>
+
+			<div class="col-4 reel">
+				<article style="padding:10px; background-color: white; height:100%; ">
+					<header>
+						<h2 style="color: #646464; text-align: center;"><a
+								href="http://S-chahine.github.io/pomodoro-timer" target="_blank">Pomodoro Timer</a>
+						</h2>
+					</header>
+					<a href="http://S-chahine.github.io/pomodoro-timer" class="image featured" target="_blank"
+						style="text-align: center;"><img src="images/timer.png" alt="Pomodoro Timer App Screenshot"
+							style="border: 10px solid #646464; border-radius: 10%; width: 200px; height: 200px; padding: 5px; display: inline-block;" /></a>
+
+					<p>The Pomodoro Timer App is a responsive web application designed to boost productivity using the
+						popular Pomodoro Technique. Built with React, the app allows users to customize work and break
+						intervals, fostering efficient time management. The intuitive interface provides a seamless
+						experience for enhancing focus and productivity.
+					</p>
+					<h3>Key Features:</h3>
+
+					<ul>
+						<li>Customizable Pomodoro and break sessions</li>
+						<li>Intuitive interface for ease of use</li>
+						<li>Responsive design for optimal user experience</li>
+					</ul>
+
+					<p>Technologies Used:</p>
+					<ul>
+						<li>React</li>
+						<li>JavaScript</li>
+						<li>HTML/CSS</li>
+						<li>FontAwesome</li>
+					</ul>
+
+					<p>Check out the app live <a href="http://S-chahine.github.io/pomodoro-timer" target="_blank"
+							style="color:darkorange">here</a>!
+					</p>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+
+					<!-- Contact -->
+					<section class="contact">
+						<p style="color:#ef8376; font-size: 35px;">
+							Web Developer &nbsp;&nbsp; <img src="images/coding-language.png" width="60px"
+								height="60px" />&nbsp;&nbsp; Design
+							Enthusiast&nbsp;&nbsp; <img src="images/coding-language.png" width="60px" height="60px" />
+							&nbsp;&nbsp;Continuous Learner.
+						</p>
+						<p></p>
+						<ul class="icons">
+							<li>
+								<a href="https://github.com/S-chahine" class="icon brands fa-github" target="_blank">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+							<li><a href="http://linkedin.com/in/samah-chahine-4a4435252"
+									class="icon brands fa-linkedin-in" target="_blank"><span
+										class="label">Linkedin</span></a>
+							</li>
+						</ul>
+					</section>
+
+					<!-- Copyright -->
+					<div class="copyright">
+						<ul style="list-style-type: none;">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>
+								<!-- Attribution for Coding Icons -->
+								<a href="https://www.flaticon.com/free-icons/coding"
+									title="Coding icons created by Freepik - Flaticon" target="_blank"
+									style="font-size: 10px;">
+									Coding icons created by Freepik - Flaticon
+								</a>
+							</li>
+							<li>
+								Photo by <a
+									href="https://unsplash.com/@eva_gorobets_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eva
+									Gorobets</a> on <a
+									href="https://unsplash.com/photos/gray-and-black-textile-on-white-surface-vJ4NYVIhQpU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+							</li>
+
+						</ul>
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function showContent(contentId) {
+			// Hide all content sections
+			var defaultContent = document.querySelector('.default');
+			defaultContent.style.display = 'none';
+			var contentSections = document.querySelectorAll('.section-content');
+			contentSections.forEach(function (section) {
+				section.style.display = 'none';
+			});
+
+			// Show the selected content section
+			var selectedContent = document.getElementById(contentId);
+			if (selectedContent) {
+				selectedContent.style.display = 'block';
+
+				// Add a hide button to the selected content
+				var hideButton = document.createElement('button');
+				hideButton.textContent = 'Hide Content';
+				hideButton.addEventListener('click', function () {
+					selectedContent.style.display = 'none';
+					document.getElementById('content').style.display = 'block';
+					document.getElementById('work').style.display = 'block';
+				});
+
+				// Check if the hide button already exists, and add it if not
+				if (!selectedContent.querySelector('button')) {
+					selectedContent.appendChild(hideButton);
+				}
+			}
+		}
+	</script>
+
+</body>
+
+</html>
